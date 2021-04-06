@@ -1,0 +1,15 @@
+:root {
+    --primary: #dd5555;
+    --font-color: #2e2e2e;
+    --font-bis: #fff;
+  }
+  
+  /* Définition du container */
+  .container {
+    width: 100%;
+    max-width: 114rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
