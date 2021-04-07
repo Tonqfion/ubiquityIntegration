@@ -222,9 +222,6 @@ h2 {
   font-size: 1.4rem;
   font-weight: 700;
   text-transform: uppercase;
-}
-
-.menu-link {
   transition:ease-in-out .5s;
 }
 
@@ -364,17 +361,42 @@ h1 {
   justify-content: space-around;
   align-items: center;
   box-shadow: 0 0.3rem 0.6rem #00000029;
+  transition:ease-in-out .5s;
 }
 
 .blog-card h3 {
   color: var(--primary);
   font-size: 4rem;
+  transition:ease-in-out .5s;
 }
 
 .blog-card p {
   margin-left: 4.5rem;
   margin-right: 4.5rem;
   margin-bottom: 4.5rem;
+}
+
+.blog-card img {
+  transition:ease-in-out .5s;
+}
+
+
+.blog-post-link:hover,
+.blog-post-link:focus .blog-card {
+  background-color:var(--primary);
+  color:var(--font-bis);
+}
+
+
+.blog-post-link:hover,
+.blog-post-link:focus .blog-card>h3 {
+  color:var(--font-bis);
+}
+
+
+.blog-post-link:hover,
+.blog-post-link:focus .blog-card>img {
+  filter:grayscale(80%);
 }
 
 /* Fun facts ! */
@@ -396,6 +418,11 @@ h1 {
       ),
       url(../img/desk_bg_2x.jpg);
   }
+}
+
+
+.fun-facts ul {
+  margin-top:5rem;
 }
 
 .fun-facts-list {
@@ -440,16 +467,14 @@ h1 {
   border-radius:50%;
 }
 
+.testimony h2 {
+  margin:0;
+}
+
 .testimony p {
   font-size:2.4rem;
-  line-height:3.2rem;
+  line-height:1.5;
 }
-
-.testimony-title {
-  padding-top:1.5rem;
-  padding-bottom:1.5rem;
-}
-
 
 /* footer */
 
