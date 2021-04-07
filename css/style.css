@@ -224,7 +224,12 @@ h2 {
   text-transform: uppercase;
 }
 
-.menu-item:hover {
+.menu-link {
+  transition:ease-in-out .5s;
+}
+
+.menu-link:hover,
+.menu-link:focus {
   background-color: var(--primary);
   color: var(--font-bis);
 }
