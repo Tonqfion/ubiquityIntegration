@@ -1,15 +1,526 @@
+/* raleway-regular - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/raleway-v19-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/raleway-v19-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* raleway-600 - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/raleway-v19-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/raleway-v19-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* raleway-700 - latin */
+@font-face {
+  font-family: "Raleway";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/raleway-v19-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/raleway-v19-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/montserrat-v15-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v15-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-500 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""), url("../fonts/montserrat-v15-latin-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v15-latin-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""), url("../fonts/montserrat-v15-latin-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v15-latin-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local(""), url("../fonts/montserrat-v15-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v15-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
 :root {
-    --primary: #dd5555;
-    --font-color: #2e2e2e;
-    --font-bis: #fff;
+  --primary: #f16822;
+  --font-color: #333333;
+  --font-bis: #fff;
+  --font-ter: #707070;
+}
+
+/* Définition du container */
+.container {
+  width: 100%;
+  max-width: 128rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+/* Nettoyage des liens */
+a,
+a:visited,
+a:hover,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Paramètres body */
+body {
+  font-family: Montserrat, sans-serif;
+  color: var(--font-color);
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  background-color: var(--font-bis);
+}
+
+section:not(.main-header,.testimony) {
+  text-align: center;
+}
+
+section:not(.main-header, .hero, .main-footer) {
+  padding-top: 14.5rem;
+  padding-bottom: 14.5rem;
+}
+
+/* Paramètres hN */
+
+h1,
+h2,
+h3 {
+  font-family: Raleway;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 6.4rem;
+  color: var(--primary);
+  line-height: 7.5rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.section-baseline {
+  margin: auto;
+  max-width: 105rem;
+  font-size: 2.4rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+/* déco sous les h2 */
+.double-box {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.double-box::before {
+  content: "";
+  margin-right: 0.25rem;
+  height: 1rem;
+  width: 1rem;
+  background-color: var(--primary);
+}
+
+.double-box::after {
+  content: "";
+  margin-left: 0.25rem;
+  height: 1rem;
+  width: 1rem;
+  background-color: var(--font-color);
+}
+
+/* Header */
+.main-header {
+  color: var(--font-color);
+  background-color: var(--font-bis);
+}
+
+.main-header .container {
+  height: 12rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3.2rem;
+  margin-bottom: 3.2rem;
+}
+
+/* Logo */
+.logo {
+  display: grid;
+  grid-template-columns: 7rem 1fr;
+}
+
+.logo .logo-img {
+  grid-column: 1 / 2;
+}
+
+.logo p {
+  margin-left: 1rem;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 2rem;
+  color: var(--font-ter);
+}
+
+.logo p span {
+  display: block;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-size: 1.4rem;
+}
+
+/* Navigation */
+.main-menu {
+  display: flex;
+}
+
+.menu-item {
+  padding: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.menu-item:hover {
+  background-color: var(--primary);
+  color: var(--font-bis);
+}
+
+/* hero */
+.hero {
+  background-image: url(../img/slider1.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: calc(100vh - 12rem);
+}
+
+@media (min-resolution: 144dpi) {
+  .hero {
+    background-image: url(../img/slider1_2x.jpg);
   }
-  
-  /* Définition du container */
-  .container {
-    width: 100%;
-    max-width: 114rem;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+}
+
+.hero .container {
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+h1 {
+  font-size: 6.4rem;
+  color: var(--primary);
+}
+
+.slider-button {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.right-arrow-svg {
+  transform: rotate(180deg);
+}
+
+.hero-baseline {
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+}
+
+/* Services */
+
+.services-list {
+  display: flex;
+  flex-direction: row;
+}
+
+.service-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 12rem;
+  width: 12rem;
+  border-radius: 50%;
+  background-color: #eeeeee;
+}
+
+.service-item h3 {
+  padding: 20px;
+}
+
+/* hero bis double BG ! */
+
+.hero-bis {
+  background-image: url(../img/bokehback.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+@media (min-resolution: 144dpi) {
+  .hero-bis {
+    background-image: url(../img/bokehback_2x.jpg);
   }
+}
+
+.hero-bis h2 {
+  color: var(--primary);
+}
+
+.hero-bis .section-baseline {
+  color: #eee;
+}
+
+.hero-bis .double-box::after {
+  background-color: var(--font-bis);
+}
+
+.screenshot {
+  margin: auto;
+  max-width: 105rem;
+  margin-bottom: -14.5rem;
+}
+
+/* Blog */
+
+.blog {
+  background-color: #f9f9f9;
+}
+
+.blog-archive {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 4rem;
+  padding-top: 11.5rem;
+}
+
+.blog-card {
+  background-color: var(--font-bis);
+  min-width: 40rem;
+  min-height: 60rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  box-shadow: 0 0.3rem 0.6rem #00000029;
+}
+
+.blog-card h3 {
+  color: var(--primary);
+  font-size: 4rem;
+}
+
+.blog-card p {
+  font-size: 1.6rem;
+  margin-left: 4.5rem;
+  margin-right: 4.5rem;
+  margin-bottom: 4.5rem;
+}
+
+/* Fun facts ! */
+
+.fun-facts {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.65),
+      rgba(255, 255, 255, 0.65)
+    ),
+    url(../img/desk_bg.jpg);
+  background-position: center;
+  background-size: cover;
+}
+@media (min-resolution: 144dpi) {
+  .fun-facts {
+    background-image: linear-gradient(
+        rgba(255, 255, 255, 0.65),
+        rgba(255, 255, 255, 0.65)
+      ),
+      url(../img/desk_bg_2x.jpg);
+  }
+}
+
+.fun-facts-list {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.fun-facts-item .fact-number {
+  font-weight: 700;
+  font-size: 6.4rem;
+  line-height: 7.8rem;
+  color: var(--primary);
+}
+
+.fun-facts-item .fact-text {
+  font-size: 2.4rem;
+  line-height:3.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+/* testimony */
+
+.testimony {
+  background-image: url(../img/rect.jpg);
+  background-position: center;
+  background-size: cover;
+  text-align:left;
+  color:var(--font-bis);
+}
+@media (min-resolution: 144dpi) {
+  .testimony {
+    background-image:url(../img/rect_bg_2x.jpg);
+  }
+}
+
+.testimony-img {
+  width:22rem;
+  height:22rem;
+  margin-right:5rem;
+  float:left;
+  border-radius:50%;
+}
+
+.testimony p {
+  font-size:2.4rem;
+  line-height:3.2rem;
+}
+
+.testimony-title {
+  padding-top:1.5rem;
+  padding-bottom:1.5rem;
+}
+
+
+/* footer */
+
+.main-footer {
+  background-color:var(--font-color);
+  color:#CCC;
+  padding-top:11rem;
+}
+
+.main-footer a {
+  font-size:2rem;
+  line-height:4.1rem;
+}
+
+.main-footer .container {
+  min-height:60rem;
+  display:grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 
+}
+
+
+.footer-column {
+  display:flex;
+  flex-direction: column;
+}
+
+.footer-column h3 {
+  color:var(--primary);
+  font-size:2.4rem;
+  line-height:2.9rem;
+  margin-bottom:2rem;
+}
+
+
+.footer-menu-item:before {
+  content: url('../img/angle-double-right.svg');
+  width: 1.1rem;
+  height: 0.8rem;
+  margin-right: 10px;
+}
+
+/* .tags-list {
+  display:block;
+} */
+
+.tag-item {
+  display:inline;
+}
+
+.tag-item a {
+  padding:0.5rem;
+  margin-left:0.5rem;
+  margin-right:0.5rem;
+  background-color:#444;
+}
+
+
+.adress-row {
+  display:flex;
+  padding-bottom:1rem;
+}
+
+.adress-row img {
+  margin:1rem;
+  width:2.4rem;
+  height:2.4rem;
+}
+
+.footer-bottom {
+  display:flex;
+  justify-content: space-between;
+  grid-column: 1 / -1;
+  font-size:2.4rem;
+  line-height:3.2rem;
+  color:#777;
+  padding-top:3.5rem;
+  padding-bottom:3.5rem;
+  border-top:0.2rem solid #707070;
+}
+
+.footer-social-menu {
+  display:flex;
+  align-items: flex-end;
+}
+
+.social-menu-item {
+  margin-left:2rem;
+}

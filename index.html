@@ -5,9 +5,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&display=swap"
-        rel="stylesheet"> -->
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>UBIQUITY</title>
@@ -17,7 +14,9 @@
 <body>
     <header class="main-header">
         <div class="container">
-            <div class="logo ir">UBIQUITY</div>
+            <div class="logo"><img src="img/logo.svg" alt="logo ubiquity" class="logo-img">
+                <p>Ubiquity<span>Professionnal Web UI</span></p>
+            </div>
             <nav class="main-nav">
                 <ul class="main-menu">
                     <li class="menu-item"><a href="" class="menu-link">Home</a></li>
@@ -32,7 +31,10 @@
     <section class="hero">
         <div class="container">
             <h1>At Ubiquity, We care</h1>
-            <p class="hero-baseline">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae, accusamus eos at
+            <div class="slider-button"><img src="img/arrow-circle-left.svg" alt="flèche à gauche"><img
+                    src="img/arrow-circle-left.svg" alt="flèche à droite" class="right-arrow-svg"></div>
+            <p class="section-baseline hero-baseline">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae,
+                accusamus eos at
                 commodi consequuntur maiores recusandae esse itaque ullam nostrum!</p>
         </div>
     </section>
@@ -40,6 +42,7 @@
 
         <div class="container">
             <h2 class="section-title">Our Services</h2>
+            <div class="double-box"></div>
             <p class="section-baseline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor nihil, dolorem
                 blanditiis laboriosam neque dolores inventore fugiat earum, error maiores quis quia, ipsum tenetur in
                 nam veritatis id impedit sunt.</p>
@@ -74,73 +77,81 @@
     <section class="hero-bis">
         <div class="container">
             <h2 class="section-title">What is Ubiquity ?</h2>
+            <div class="double-box"></div>
             <p class="section-baseline white-title">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae,
                 accusamus eos
                 at commodi consequuntur maiores recusandae esse itaque ullam nostrum!</p>
+            <img src="img/bg.png" alt="" srctset="img/bg_2x.png 2x" class="screenshot">
         </div>
     </section>
 
     <section class="blog">
         <div class="container">
             <h2 class="section-title">Latest Posts</h2>
-            <p class="section-baseline"></p>
-            <article class="blog-card"><img src="img/office.jpg" srcset="img/office_2x.jpg 2x" alt="open space">
-                <h3>Blog Title</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam unde
-                    saepe consectetur accusantium similique natus nisi voluptatem
-                    necessitatibus blanditiis! Voluptates?
-                </p>
-            </article>
-            <article class="blog-card"><img src="img/macbook_iphone.jpg" srcset="img/macbook_iphone_2x.jpg 2x"
-                    alt="Macbook et personne tenant un iphone">
-                <h3>Title of the blog</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam unde
-                    saepe consectetur accusantium similique natus nisi voluptatem
-                    necessitatibus blanditiis! Voluptates?
-                </p>
-            </article>
-            <article class="blog-card"><img src="img/pen_writing.jpg" srcset="img/pen_writing_2x.jpg 2x"
-                    alt="Personne qui écrit avec un stylo">
-                <h3>Title of the blog</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam unde
-                    saepe consectetur accusantium similique natus nisi voluptatem
-                    necessitatibus blanditiis! Voluptates?
-                </p>
-            </article>
-            <article class="blog-card"><img src="img/macbookair.jpg" srcset="img/macbookair_2x.jpg 2x"
-                    alt="des gens qui travaillent avec des macbook">
-                <h3>Blog Title</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam unde
-                    saepe consectetur accusantium similique natus nisi voluptatem
-                    necessitatibus blanditiis! Voluptates?
-                </p>
-            </article>
-            <article class="blog-card"><img src="img/desk.jpg" srcset="img/desk_2x.jpg 2x" alt="bureau vu d'en haut">
-                <h3>Blog Title</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam unde
-                    saepe consectetur accusantium similique natus nisi voluptatem
-                    necessitatibus blanditiis! Voluptates?
-                </p>
-            </article>
-            <article class="blog-card"><img src="img/office.jpg" srcset="img/office_2x.jpg 2x" alt="open space">
-                <h3>Title of the Blog</h3>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam unde
-                    saepe consectetur accusantium similique natus nisi voluptatem
-                    necessitatibus blanditiis! Voluptates?
-                </p>
-            </article>
+            <div class="double-box"></div>
+            <p class="section-baseline">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem, ducimus?
+            </p>
+            <div class="blog-archive">
+                <article class="blog-card"><img src="img/office.jpg" srcset="img/office_2x.jpg 2x" alt="open space">
+                    <h3>Blog Title</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam unde
+                        saepe consectetur accusantium similique natus nisi voluptatem
+                        necessitatibus blanditiis! Voluptates?
+                    </p>
+                </article>
+                <article class="blog-card"><img src="img/macbook_iphone.jpg" srcset="img/macbook_iphone_2x.jpg 2x"
+                        alt="Macbook et personne tenant un iphone">
+                    <h3>Title of the blog</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam unde
+                        saepe consectetur accusantium similique natus nisi voluptatem
+                        necessitatibus blanditiis! Voluptates?
+                    </p>
+                </article>
+                <article class="blog-card"><img src="img/pen_writing.jpg" srcset="img/pen_writing_2x.jpg 2x"
+                        alt="Personne qui écrit avec un stylo">
+                    <h3>Title of the blog</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam unde
+                        saepe consectetur accusantium similique natus nisi voluptatem
+                        necessitatibus blanditiis! Voluptates?
+                    </p>
+                </article>
+                <article class="blog-card"><img src="img/macbookair.jpg" srcset="img/macbookair_2x.jpg 2x"
+                        alt="des gens qui travaillent avec des macbook">
+                    <h3>Blog Title</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam unde
+                        saepe consectetur accusantium similique natus nisi voluptatem
+                        necessitatibus blanditiis! Voluptates?
+                    </p>
+                </article>
+                <article class="blog-card"><img src="img/desk.jpg" srcset="img/desk_2x.jpg 2x"
+                        alt="bureau vu d'en haut">
+                    <h3>Blog Title</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam unde
+                        saepe consectetur accusantium similique natus nisi voluptatem
+                        necessitatibus blanditiis! Voluptates?
+                    </p>
+                </article>
+                <article class="blog-card"><img src="img/office.jpg" srcset="img/office_2x.jpg 2x" alt="open space">
+                    <h3>Title of the Blog</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam unde
+                        saepe consectetur accusantium similique natus nisi voluptatem
+                        necessitatibus blanditiis! Voluptates?
+                    </p>
+                </article>
+            </div>
         </div>
     </section>
     <section class="fun-facts">
 
         <div class="container">
             <h2 class="section-title">Fun Facts</h2>
+            <div class="double-box"></div>
             <ul class="fun-facts-list">
                 <li class="fun-facts-item">
                     <p class="fact-number">5</p>
@@ -204,31 +215,37 @@
             </div>
             <div class="footer-column">
                 <h3>Tags</h3>
-                <span class="tag-item">insider</span> <span class="tag-item">check</span> <span
-                    class="tag-item">demo</span> <span class="tag-item">office</span> <span class="tag-item">work</span>
-                <span class="tag-item">post</span> <span class="tag-item">management</span>
+                <ul class="tags-list">
+                    <li class="tag-item"><a href="#">insider</a></li>
+                    <li class="tag-item"><a href="#">check</a></li>
+                    <li class="tag-item"><a href="#">demo</a></li>
+                    <li class="tag-item"><a href="#">office</a></li>
+                    <li class="tag-item"><a href="#">work</a></li>
+                    <li class="tag-item"><a href="#">post</a></li>
+                    <li class="tag-item"><a href="#">management</a></li>
+                </ul>
             </div>
             <div class="footer-column">
                 <h3>Ubiquity</h3>
                 <div class="adress-row">
-                    <figure class="adress-img"><img src="img/map-marker.svg" alt="épingle de carte"></figure><a href="#"
+                    <img src="img/map-marker.svg" alt="épingle de carte"><a href="#"
                         class="footer-link">2499 Bee Street, Bear Lake, Michigan 49614</a>
                 </div>
                 <div class="adress-row">
-                    <figure class="adress-img"><img src="img/phone.svg" alt="téléphone"></figure><a
+                    <img src="img/phone.svg" alt="téléphone"><a
                         href="tel:2318648100" class="footer-link">231-864-8100</a>
                 </div>
                 <div class="adress-row">
-                    <figure class="adress-img"><img src="img/envelope.svg" alt="enveloppe"></figure><a
+                    <img src="img/envelope.svg" alt="enveloppe"><a
                         href="mailto:hello@domainname" class="footer-link">hello@domainname</a>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>© 2019 Ubiquity . All Rights Reserved.</p>
                 <ul class="footer-social-menu">
-                    <li class="social-menu-item"><img src="img/facebook.svg" alt="Logo Facebook"></li>
-                    <li class="social-menu-item"><img src="img/twitter.svg" alt="Logo Twitter"></li>
-                    <li class="social-menu-item"><img src="img/google-plus.svg" alt="Logo google plus"></li>
+                    <li class="social-menu-item"><a href="#"><img src="img/facebook.svg" alt="Logo Facebook"></a></li>
+                    <li class="social-menu-item"><a href="#"><img src="img/twitter.svg" alt="Logo Twitter"></a></li>
+                    <li class="social-menu-item"><a href="#"><img src="img/google-plus.svg" alt="Logo google plus"></a></li>
                 </ul>
             </div>
 
