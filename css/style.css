@@ -96,7 +96,7 @@ body {
   font-family: Montserrat, sans-serif;
   color: var(--font-color);
   font-size: 1.6rem;
-  line-height: 2.4rem;
+  line-height: 1.5;
   background-color: var(--font-bis);
 }
 
@@ -106,35 +106,43 @@ section:not(.main-header,.testimony) {
 
 section:not(.main-header, .hero, .main-footer) {
   padding-top: 14.5rem;
-  padding-bottom: 14.5rem;
+  padding-bottom: 17rem;
 }
 
 /* Paramètres hN */
+
+p {
+  font-size: 1.6rem;
+  line-height: 1.5;
+  margin:0.25em;
+
+}
 
 h1,
 h2,
 h3 {
   font-family: Raleway;
   font-weight: 700;
+  line-height:1.2;
 }
 
 h1 {
   font-size: 6.4rem;
   color: var(--primary);
-  line-height: 7.5rem;
 }
 
 h2 {
   font-size: 4.8rem;
-  line-height: 5.6rem;
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+  line-height:1.2;
 }
 
 .section-baseline {
   margin: auto;
   max-width: 105rem;
   font-size: 2.4rem;
+  line-height:1.33;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
@@ -174,8 +182,8 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 3.2rem;
-  margin-bottom: 3.2rem;
+  padding-top: 1.7rem;
+  padding-bottom: 1.7rem;
 }
 
 /* Logo */
@@ -208,7 +216,8 @@ h2 {
   display: flex;
 }
 
-.menu-item {
+.menu-link {
+  display:block;
   padding: 1.5rem;
   font-size: 1.4rem;
   font-weight: 700;
@@ -226,6 +235,8 @@ h2 {
   background-position: center;
   background-size: cover;
   min-height: calc(100vh - 12rem);
+  display:flex;
+  align-items: center;
 }
 
 @media (min-resolution: 144dpi) {
@@ -261,7 +272,7 @@ h1 {
 
 .hero-baseline {
   font-size: 3.2rem;
-  line-height: 3.2rem;
+  line-height: 1;
 }
 
 /* Services */
@@ -285,7 +296,7 @@ h1 {
   height: 12rem;
   width: 12rem;
   border-radius: 50%;
-  background-color: #eeeeee;
+  background-color: #eee;
 }
 
 .service-item h3 {
@@ -321,7 +332,8 @@ h1 {
 .screenshot {
   margin: auto;
   max-width: 105rem;
-  margin-bottom: -14.5rem;
+  margin-top:10rem;
+  margin-bottom: -17rem;
 }
 
 /* Blog */
@@ -333,8 +345,9 @@ h1 {
 .blog-archive {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 4rem;
-  padding-top: 11.5rem;
+  grid-column-gap: 4rem;
+  grid-row-gap: 10rem;
+  margin-top: 11.5rem;
 }
 
 .blog-card {
@@ -345,8 +358,6 @@ h1 {
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
   box-shadow: 0 0.3rem 0.6rem #00000029;
 }
 
@@ -356,7 +367,6 @@ h1 {
 }
 
 .blog-card p {
-  font-size: 1.6rem;
   margin-left: 4.5rem;
   margin-right: 4.5rem;
   margin-bottom: 4.5rem;
@@ -413,7 +423,7 @@ h1 {
 }
 @media (min-resolution: 144dpi) {
   .testimony {
-    background-image:url(../img/rect_bg_2x.jpg);
+    background-image:url(../img/rect_2x.jpg);
   }
 }
 
@@ -467,6 +477,7 @@ h1 {
   font-size:2.4rem;
   line-height:2.9rem;
   margin-bottom:2rem;
+  text-transform:uppercase;
 }
 
 
@@ -508,14 +519,16 @@ h1 {
   display:flex;
   justify-content: space-between;
   grid-column: 1 / -1;
-  font-size:2.4rem;
-  line-height:3.2rem;
-  color:#777;
   padding-top:3.5rem;
   padding-bottom:3.5rem;
   border-top:0.2rem solid #707070;
 }
 
+.footer-bottom p {
+  font-size:2.4rem;
+  color:#777;
+
+}
 .footer-social-menu {
   display:flex;
   align-items: flex-end;
