@@ -381,21 +381,21 @@ h1 {
 }
 
 
-.blog-post-link:hover,
+.blog-post-link:hover .blog-card,
 .blog-post-link:focus .blog-card {
   background-color:var(--primary);
   color:var(--font-bis);
 }
 
 
-.blog-post-link:hover,
-.blog-post-link:focus .blog-card>h3 {
+.blog-post-link:hover .blog-card h3,
+.blog-post-link:focus .blog-card h3 {
   color:var(--font-bis);
 }
 
 
-.blog-post-link:hover,
-.blog-post-link:focus .blog-card>img {
+.blog-post-link:hover .blog-card img,
+.blog-post-link:focus .blog-card img {
   filter:grayscale(80%);
 }
 
