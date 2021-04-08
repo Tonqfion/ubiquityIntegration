@@ -501,7 +501,7 @@ h1 {
 
 .main-footer a {
   font-size: 2rem;
-  line-height: 4.1rem;
+  line-height: 2;
 }
 
 .main-footer .container {
@@ -660,7 +660,6 @@ h1 {
 
   .footer-column {
     margin-bottom: 3rem;
-    width: 39rem;
   }
 }
 
