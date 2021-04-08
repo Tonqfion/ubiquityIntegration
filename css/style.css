@@ -98,8 +98,8 @@ body {
   font-size: 1.6rem;
   line-height: 1.5;
   background-color: var(--font-bis);
-  overflow-x: hidden;
   width:100vw;
+  overflow-x:hidden;
 }
 
 section:not(.main-header, .testimony) {
@@ -679,6 +679,10 @@ h1 {
     align-items: center;
   }
 
+  .service-item {
+    margin-top:2rem;
+  }
+
   .fun-facts-list {
     flex-wrap: wrap;
   }
@@ -723,7 +727,8 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    transform: translateX(100%);
+    justify-content: flex-start;
+    transform: translateX(-100%);
     transition: transform 0.3s ease-in-out;
   }
 
